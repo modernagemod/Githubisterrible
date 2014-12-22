@@ -1,0 +1,33 @@
+country_event = {
+	id = 31
+	title = "EVTNAME31"
+	desc = "EVTDESC31"
+	picture = "nuclearwar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "A moment of silence for the fallen."
+		prestige = 1
+	}
+	option = {
+		name = "No, they are the lucky ones."
+		prestige = 1
+	}
+}
+
+province_event = {
+	id = 32
+	title = "EVTNAME32"
+	desc = "EVTDESC32"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "This is catastrophic."
+	}
+	
+	option = {
+		name = "Can we weaponize this?"
+	}
+}

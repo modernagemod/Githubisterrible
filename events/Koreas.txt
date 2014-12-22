@@ -1,0 +1,122 @@
+country_event = { #koreas same government form = unite
+	id = 100100
+	title = "EVTNAME100100"
+	desc = "EVTDESC100100"
+	trigger = {
+		exists = SKO
+		exists = NKO
+		NOT = { has_global_flag = korea_reformed }
+		SKO = { NOT = { war_with = NKO } }
+		OR = {
+			AND = {
+				tag = SKO
+				NKO = { ai = yes }
+			}
+			AND = {
+				ai = no
+				tag = NKO
+				SKO = { ai = yes }
+			}
+		}
+		OR = {
+			AND = {
+				SKO = { government = proletarian_dictatorship }
+				NKO = { government = proletarian_dictatorship }
+			}
+			AND = {
+				SKO = { government = presidential_dictatorship }
+				NKO = { government = presidential_dictatorship }
+			}
+			AND = {
+				SKO = { government = bourgeois_dictatorship }
+				NKO = { government = bourgeois_dictatorship }
+			}
+			AND = {
+				SKO = { 
+					OR = {
+						government = fascist_dictatorship
+						government = fascist_dictatorship_chancellor
+						government = fascist_dictatorship_prime_minister
+					}
+				}
+				NKO = {
+					OR = {
+						government = fascist_dictatorship
+						government = fascist_dictatorship_chancellor
+						government = fascist_dictatorship_prime_minister
+					}
+				}
+			}
+			AND = {
+				SKO = { 
+					OR = {
+						government = absolute_monarchy
+						government = prussian_constitutionalism
+					}
+				}
+				NKO = {
+					OR = {
+						government = absolute_monarchy
+						government = prussian_constitutionalism
+					}
+				}
+			}
+
+			AND = {
+				SKO = {
+					OR = {
+						government = hms_government
+						government = prussian_constitutionalism
+					}
+				}
+				NKO = {
+					OR = {
+						government = hms_government
+						government = prussian_constitutionalism
+					}
+				}
+			}
+			AND = {
+				SKO = { 
+					OR = {
+						government = democracy
+						government = hms_government
+						government = parliamentary_republic
+						government = parliamentary_republic_chancellor
+						government = parliamentary_republic_president
+						government = presidential_republic_full
+						government = presidential_republic_semi
+					}
+				}
+				NKO = { 
+					OR = {
+						government = democracy
+						government = hms_government
+						government = parliamentary_republic
+						government = parliamentary_republic_chancellor
+						government = parliamentary_republic_president
+						government = presidential_republic_full
+						government = presidential_republic_semi
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "EVTOPTA100100"
+		set_global_flag = korea_reformed
+		change_tag = KOR
+		SKO = {
+			all_core = { add_core = KOR }
+
+		}
+		NKO = {
+			all_core = { add_core = KOR }
+		}
+		inherit = SKO
+		inherit = NKO
+	}
+}

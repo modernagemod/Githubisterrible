@@ -1,0 +1,61 @@
+# Falkland Purchase 1/3
+country_event = {
+	id = 32553
+	title = "The Falkland Islands Purchase"
+	desc = "$FROMCOUNTRY_ADJ$ delegates have recently come in from London in hopes of purchasing the Falkland Islands. What should we do?"
+	picture = "falkland"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We gladly accept."
+		money = 50000
+		2131 = { remove_core = THIS }
+		FROM = { country_event = 32554 }
+		ai_chance = {
+			factor = 5
+		}
+	}
+
+	option = {
+		name = "We refuse."
+		FROM = { country_event = 32555 }
+		ai_chance = {
+			factor = 95
+		}
+	}
+}
+
+# Falkland Purchase 2/3
+country_event = {
+	id = 32554
+	title = "$FROMCOUNTRY$ Accepts!"
+	desc = "$FROMCOUNTRY$ has agreed to sell the Falkland Islands to us! Long live $COUNTRY$!"
+	picture = "falkland"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent."
+		prestige = 5
+		money = -50000
+		2131 = { secede_province = THIS }
+		relation = { who = FROM value = 150 }
+		any_pop = { consciousness = -1 }
+	}
+}
+
+# Falkland Purchae 3/3
+country_event = {
+	id = 32555
+	title = "$FROMCOUNTRY$ Declines!"
+	desc = "$MONARCHTITLE$, negotiations with $FROMCOUNTRY$ over the Falkland Islands have stalled, and they have declined to sell us the Islands."
+	picture = "falkland"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Hm, I see."
+		relation = { who = FROM value = -100 }
+	}
+}

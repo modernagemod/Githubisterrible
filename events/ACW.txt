@@ -1,0 +1,79 @@
+### MAM REMOVED ###
+
+#A House Divided
+# The Slavery Debate
+#John Brown's Raid
+#Dred Scott v. Sandford
+#A Southern Belle
+#Southern Manorialism
+#I Wish I Was in Dixie
+#Yankee Doodle
+#Fire-Eaters
+#Follow The Drinkin' Gourd
+#Knights of The Golden Circle
+#Underground Railroad
+#Copperheads
+#The Liberator
+#Slave Power
+# Free Staters
+#Border Ruffians
+#Bleeding $STATENAME$
+#Wakarusa War
+#$STATENAME$ Emigrant Aid Company
+#Quantrill's Raiders
+#Pottawatomie Rifles
+#Secessionist Sentiments
+### Fire-only-once ###
+#Uncle Tom's Cabin
+# The Amistad Decision
+
+#Special
+#American minors apply for statehood
+country_event = {
+	id = 16400
+	title = "EVTNAME16400"
+	desc = "EVTDESC16400"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "EVTOPTA16400"
+		FROM = {
+			any_owned = {
+				add_core = USA
+			}
+		}
+		inherit = FROM
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB16400"
+		relation = {
+			who = FROM
+			value = -100
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#End Of The Anaconda Plan
+# Rise of The KKK
+
+##### Indian Wars #####
+#Sioux Wars
+#Little Bighorn
+#End of The Sioux Wars
+
+#Apache Wars
+#Apache Raiders
+
+#Apprehending Geronimo
+
+# Texas goods
