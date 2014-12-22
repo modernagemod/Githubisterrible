@@ -1,0 +1,241 @@
+# All global modifiers are here.  They are applied from certain game-features.
+#
+# Effects are fully scriptable here.
+
+
+#these names can NOT be removed or changes, as the code uses them....
+
+##########################################################################
+# Difficulty Modifiers
+##########################################################################
+
+
+
+very_easy_player = {
+	research_points_modifier = 0.5
+	war_exhaustion = -0.1
+	leadership_modifier = 0.5
+	factory_output = 0.20
+}
+
+easy_player = {
+	research_points_modifier = 0.25
+	leadership_modifier = 0.25
+	factory_output = 0.10
+}
+
+hard_player = {
+	research_points_modifier = -0.25
+	leadership_modifier = -0.25
+	factory_output = -0.10
+}
+
+very_hard_player = {
+	research_points_modifier = -0.5
+	war_exhaustion = 0.1
+	leadership_modifier = -0.5
+	factory_output = -0.20
+}
+
+
+
+
+very_easy_ai = {
+	land_organisation = -0.25
+	naval_organisation = -0.25
+
+}
+
+easy_ai = {
+}
+
+hard_ai = {
+	badboy = -0.02
+	research_points_modifier = 0.5
+	land_organisation = 0.25
+	naval_organisation = 0.25
+	leadership_modifier = 0.5
+	global_pop_militancy_modifier = -0.02
+	factory_output = 0.10
+}
+
+very_hard_ai = {
+	badboy = -0.05
+	research_points_modifier = 1.0
+	land_organisation = 0.5
+	naval_organisation = 0.5
+	leadership_modifier = 1.0
+	global_pop_militancy_modifier = -0.04
+	factory_output = 0.20
+}
+
+
+##########################################################################
+# Provincial Static Modifiers
+##########################################################################
+
+overseas = {
+	assimilation_rate = -0.4
+}
+
+coastal = {
+	supply_limit = 1
+	max_attrition = 0
+}
+
+non_coastal = {
+	max_attrition = 0
+}
+
+coastal_sea = {
+	supply_limit = 5
+}
+
+sea_zone = {
+	max_attrition = 0			#Maximum Attrition is 5
+}
+
+land_province = {
+	max_attrition = 1			#Maximum Attrition is 5
+	supply_limit = 20
+}
+
+
+
+blockaded = {
+	war_exhaustion = 0.025
+}
+
+no_adjacent_controlled = {
+	supply_limit = -3
+}
+
+
+core = {
+	supply_limit = 2
+}
+
+has_siege = {
+	farm_rgo_eff = -0.5
+	mine_rgo_eff = -0.5
+}
+
+occupied = {
+	population_growth = -0.02
+	immigrant_attract = -1
+	war_exhaustion = 0.05
+}
+
+
+
+nationalism = {
+	pop_consciousness_modifier = 0.01
+}
+
+infrastructure = {
+	local_factory_throughput = 1		#each % of infra boost throughput 1%
+	local_rgo_throughput = 1			#each % of infra boost throughput 1%
+	supply_limit = 3
+}
+
+
+
+##########################################################################
+# Global Static Modifiers
+##########################################################################
+
+base_values = {
+}
+
+war = {
+	max_war_exhaustion = 100			#base max at war.
+	#war_exhaustion = 0.1
+	badboy = -0.033
+}
+
+peace = {
+	max_war_exhaustion = 100			#base max at peace.
+	supply_consumption = -0.5
+	war_exhaustion = -2
+	badboy = -0.1
+}
+
+disarming = {
+	badboy = -1
+}
+
+war_exhaustion = {
+	global_pop_consciousness_modifier = 0.005
+}
+
+
+badboy = {
+	global_pop_consciousness_modifier = 0.001
+	global_pop_militancy_modifier = 0.001
+}
+
+
+debt_default_to = {
+	import_cost = 0.01
+	loan_interest = 0.01
+}
+
+bad_debter = {
+	loan_interest = 0.05
+}
+
+great_power = {
+	prestige = 0.05
+	research_points = 1.5
+	diplomatic_points_modifier = 1.0
+	leadership = 2.0
+}
+
+second_power = {
+	prestige = 0.025
+	research_points = 1.25
+	diplomatic_points_modifier = 0.25
+	leadership = 1.0
+}
+
+civ_nation = {
+	prestige = 0.01
+	research_points = 1
+	leadership = 0.5
+}
+
+unciv_nation = {
+	mobilisation_size = -0.1
+	diplomatic_points_modifier = -0.25
+	cb_generation_speed_modifier = 0.8
+}
+
+
+average_literacy = {
+	research_points = 4
+	leadership = 1
+	self_unciv_economic_modifier = -0.5
+	self_unciv_military_modifier = -0.5
+}
+
+plurality = { 
+	research_points_modifier = 0.001
+	cb_generation_speed_modifier = -0.005
+	immigrant_attract = 0.01
+}
+
+generalised_debt_default = {
+	max_loan_modifier = -1.0
+}
+
+total_occupation = {
+	war_exhaustion = 0.01				#increased by war exhaustion.
+}
+
+total_blockaded = {
+	war_exhaustion = 0.01				#increased by war exhaustion.  
+}
+
+in_bankrupcy = {
+	max_loan_modifier = -1.0
+}

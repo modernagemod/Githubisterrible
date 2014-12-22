@@ -1,0 +1,235 @@
+absolute_monarchy_emperor = {
+	liberal = yes
+	conservative = yes
+	reactionary = yes
+
+	election = no
+	appoint_ruling_party = yes
+	flagType = monarchy
+}
+
+bourgeois_dictatorship = {
+	anarcho_liberal = yes
+	
+	election = no
+	appoint_ruling_party = yes
+	flagType = republic
+}
+
+#Renamed to Directorial Republic
+democracy = {
+	liberal = yes
+	socialist = yes
+	conservative = yes
+	reactionary = yes
+	communist = yes
+	anarcho_liberal = yes
+	fascist = yes
+	social_liberal = yes
+	green = yes	
+	
+	election = yes
+	duration = 48
+	appoint_ruling_party = no
+}
+
+fascist_dictatorship = {
+	fascist = yes
+	
+	election = no
+	appoint_ruling_party = yes
+	flagType = fascist
+}
+
+fascist_dictatorship_chancellor = {
+	fascist = yes
+	
+	election = no
+	appoint_ruling_party = yes
+	flagType = fascist
+}
+
+fascist_dictatorship_prime_minister = {
+	fascist = yes
+	
+	election = no
+	appoint_ruling_party = yes
+	flagType = fascist
+}
+
+
+#Renamed to Constitutional Monarchy
+hms_government = {
+	liberal = yes
+	socialist = yes
+	conservative = yes
+	reactionary = yes
+	communist = yes
+	anarcho_liberal = yes
+	fascist = yes
+	social_liberal = yes
+	green = yes	
+	
+	election = yes
+	duration = 48
+	appoint_ruling_party = no
+	flagType = monarchy
+}
+ 
+absolute_monarchy = {
+	liberal = yes
+	conservative = yes
+	reactionary = yes
+
+	election = no
+	appoint_ruling_party = yes
+	flagType = monarchy
+}
+
+failed_state = {
+	reactionary = yes
+	conservative = yes
+	fascist = yes
+
+	election = no
+	appoint_ruling_party = no
+	flagType = republic
+}
+
+military_junta = {
+	reactionary = yes
+	conservative = yes
+
+	election = no
+	appoint_ruling_party = yes
+	flagType = republic
+}
+
+papal_government = {
+	liberal = yes
+	conservative = yes
+	reactionary = yes
+
+	election = no
+	appoint_ruling_party = yes
+	flagType = monarchy
+}
+
+parliamentary_republic = {
+	liberal = yes
+	socialist = yes
+	conservative = yes
+	reactionary = yes
+	communist = yes
+	anarcho_liberal = yes
+	fascist = yes
+	social_liberal = yes
+	green = yes	
+	
+	election = yes
+	duration = 48
+	appoint_ruling_party = no
+}
+
+parliamentary_republic_chancellor = {
+	liberal = yes
+	socialist = yes
+	conservative = yes
+	reactionary = yes
+	communist = yes
+	anarcho_liberal = yes
+	fascist = yes
+	social_liberal = yes
+	green = yes	
+	
+	election = yes
+	duration = 48
+	appoint_ruling_party = no
+}
+
+parliamentary_republic_president = {
+	liberal = yes
+	socialist = yes
+	conservative = yes
+	reactionary = yes
+	communist = yes
+	anarcho_liberal = yes
+	fascist = yes
+	social_liberal = yes
+	green = yes	
+	
+	election = yes
+	duration = 48
+	appoint_ruling_party = no
+}
+
+presidential_dictatorship = {
+	reactionary = yes
+	
+	election = no
+	appoint_ruling_party = yes
+	flagType = republic
+}
+
+presidential_republic_full = {
+	liberal = yes
+	socialist = yes
+	conservative = yes
+	reactionary = yes
+	communist = yes
+	anarcho_liberal = yes
+	fascist = yes
+	social_liberal = yes
+	green = yes	
+	
+	election = yes
+	duration = 48
+	appoint_ruling_party = no
+}
+
+presidential_republic_semi = {
+	liberal = yes
+	socialist = yes
+	conservative = yes
+	reactionary = yes
+	communist = yes
+	anarcho_liberal = yes
+	fascist = yes
+	social_liberal = yes
+	green = yes	
+	
+	election = yes
+	duration = 48
+	appoint_ruling_party = no
+}
+
+#Renamed to Communist Dictatorship
+proletarian_dictatorship = {
+	communist = yes
+	
+	election = no
+	appoint_ruling_party = yes
+	flagType = communist
+}
+
+provisional_government = {
+	conservative = yes
+	reactionary = yes
+	
+	election = no
+	appoint_ruling_party = no
+	flagType = republic
+}
+
+#Renamed to Semi-Constitutional Monarchy
+prussian_constitutionalism = {
+	liberal = yes
+	socialist = yes
+	conservative = yes
+	reactionary = yes
+	
+	election = yes
+	duration = 48
+	appoint_ruling_party = yes
+	flagType = monarchy
+}
