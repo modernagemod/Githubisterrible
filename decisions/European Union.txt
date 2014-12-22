@@ -1,0 +1,74 @@
+political_decisions = {
+	join_euro_eco_com = {
+		potential = {
+			year = 3000
+			NOT = {
+				OR = {
+					has_country_flag = joined_eec
+					has_country_flag = left_eec
+				}
+			}
+		}
+		allow = {
+			OR = {
+				government = democracy
+				government = hms_government
+				government = parliamentary_republic
+				government = parliamentary_republic_chancellor
+				government = parliamentary_republic_president
+				government = presidential_republic_full
+				government = presidential_republic_semi
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = european_economic_community
+				duration = -1
+			}
+			set_country_flag = joined_eec
+		}
+	}
+	join_efto = {
+		potential = {
+			year = 3000
+			NOT = {
+				OR = {
+					has_country_flag = joined_eec
+					has_country_flag = joined_efto
+					has_country_flag = left_efto
+				}
+			}
+		}
+		allow = {
+			government = democracy
+		}
+		effect = {
+			add_country_modifier = {
+				name = efto
+				duration = -1
+			}
+			set_country_flag = joined_efto
+		}
+	}
+	schengen_convention = {
+		potential = {
+			year = 3000
+			NOT = {
+				OR = {
+					has_country_flag = attended_schengen
+					has_country_flag = refused_schengen
+				}
+			}
+		}
+		allow = {
+			government = democracy
+		}
+		effect = {
+			add_country_modifier = {
+				name = schengen_agreement
+				duration = -1
+			}
+			set_country_flag = attended_schengen
+		}
+	}
+}
